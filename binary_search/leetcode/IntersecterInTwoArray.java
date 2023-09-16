@@ -3,7 +3,7 @@ package com.company.binary_search.leetcode;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//
+// https://leetcode.com/problems/intersection-of-two-arrays/description/
 class IntersecterInTwoArray {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
