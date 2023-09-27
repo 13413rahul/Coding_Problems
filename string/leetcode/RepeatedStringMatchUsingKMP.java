@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 // https://leetcode.com/problems/repeated-string-match/description/
-public class RepeatedStringMatch {
+public class RepeatedStringMatchUsingKMP {
     public int repeatedStringMatch(String a, String b) {
         Set<Character> set = new HashSet<>();
         for(char c: a.toCharArray())
@@ -28,32 +28,6 @@ public class RepeatedStringMatch {
     private boolean matchPattern(String a, String b){
         // if(rabinKarp(a, b)) return true;
         if(KMP(a, b)) return true;
-        return false;
-    }
-
-    private boolean rabinKarp(String a, String b){
-        if(a.length() < b.length()) return false;
-        long patternHash = 0, hash = 0, prime = 7, MOD = (int)(1e9+7);
-        int i = 0, j = 0;
-
-        // Generating pattern hash
-        while(i<b.length())
-            patternHash = ((patternHash * prime) % MOD + (int)(b.charAt(i++))) % MOD;
-
-        // Generating initial hash of initial b.length() characters of a
-        i = 0;
-        while(i<b.length())
-            hash = ((hash * prime) % MOD + (a.charAt(i++))) % MOD;
-
-        if(patternHash == hash && b.equals(a.substring(0, i))) return true;
-        while(i < a.length()){
-            // Removing first value of hash
-            hash = hash - ((long)(a.charAt(j++)) * (long)(Math.pow(prime, b.length()-1)));
-            // Adding new value at the end and generating new Hash
-            hash = ((hash * prime) % MOD + (a.charAt(i++))) % MOD;
-            // if below condition return true -> Pattern matched!
-            if(patternHash == hash && b.equals(a.substring(j, i))) return true;
-        }
         return false;
     }
 
