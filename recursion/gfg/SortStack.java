@@ -3,6 +3,7 @@ package com.company.recursion.gfg;
 import java.util.ListIterator;
 import java.util.Stack;
 
+// https://practice.geeksforgeeks.org/problems/sort-a-stack/1
 public class SortStack {
     // Recursive Method to insert an item x in sorted way
     static void sortedInsert(Stack<Integer> s, int x)

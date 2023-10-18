@@ -2,6 +2,7 @@ package com.company.tree.binary_tree.gfg;
 
 import com.company.tree.binary_tree.leetcode.FlattenBinaryTreeToLinkedList;
 
+// https://practice.geeksforgeeks.org/problems/mirror-tree/1
 public class MirrorTree {
     static class Node {
         int data;

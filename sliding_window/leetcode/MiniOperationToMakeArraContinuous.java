@@ -2,6 +2,7 @@ package com.company.sliding_window.leetcode;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/
 public class MiniOperationToMakeArraContinuous {
     public int minOperations(int[] nums) {
         Arrays.sort(nums);

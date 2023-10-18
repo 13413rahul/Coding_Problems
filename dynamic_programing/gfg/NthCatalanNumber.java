@@ -1,4 +1,4 @@
-package com.company.dynamic_programing.leetcode;
+package com.company.dynamic_programing.gfg;
 
 // https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1
 public class NthCatalanNumber {

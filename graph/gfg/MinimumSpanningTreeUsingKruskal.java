@@ -1,11 +1,15 @@
 package com.company.graph.gfg;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 // https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
 public class MinimumSpanningTreeUsingKruskal {
 
 // User function Template for Java
 
-    class DisjointSet {
+    static class DisjointSet {
         List<Integer> rank = new ArrayList<>();
         List<Integer> parent = new ArrayList<>();
         List<Integer> size = new ArrayList<>();
@@ -55,7 +59,7 @@ public class MinimumSpanningTreeUsingKruskal {
         }
     }
 
-    class Edge implements Comparable<Edge> {
+    static class Edge implements Comparable<Edge> {
         int src, dest, weight;
         Edge(int _src, int _dest, int _wt) {
             this.src = _src; this.dest = _dest; this.weight = _wt;
@@ -66,7 +70,7 @@ public class MinimumSpanningTreeUsingKruskal {
             return this.weight - compareEdge.weight;
         }
     };
-    class Solution {
+    static class Solution {
         //Function to find sum of weights of edges of the Minimum Spanning Tree.
         static int spanningTree(int V,
                                 ArrayList<ArrayList<ArrayList<Integer>>> adj) {
@@ -101,7 +105,7 @@ public class MinimumSpanningTreeUsingKruskal {
         }
     }
 
-    class Main {
+    static class Main {
         public static void main (String[] args) {
             int V = 5;
             ArrayList<ArrayList<ArrayList<Integer>>> adj = new ArrayList<ArrayList<ArrayList<Integer>>>();

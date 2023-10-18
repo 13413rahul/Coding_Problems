@@ -2,6 +2,7 @@ package com.company.patturn.leetcode;
 
 import java.util.Scanner;
 
+// https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/
 public class CircularGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
