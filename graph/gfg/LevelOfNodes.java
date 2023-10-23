@@ -1,4 +1,4 @@
-package com.company.bfs.gfg;
+package com.company.graph.gfg;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

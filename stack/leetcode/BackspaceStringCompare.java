@@ -1,4 +1,4 @@
-package com.company.string.leetcode;
+package com.company.stack.leetcode;
 
 // https://leetcode.com/problems/backspace-string-compare/description/?envType=daily-question&envId=2023-10-19
 public class BackspaceStringCompare {

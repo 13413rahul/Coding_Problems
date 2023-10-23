@@ -1,4 +1,4 @@
-package com.company.dynamic_programing.leetcode;
+package com.company.queue.leetcode;
 
 import java.util.Arrays;
 import java.util.Deque;

@@ -1,4 +1,4 @@
-package com.company.dynamic_programing.leetcode;
+package com.company.sliding_window.leetcode;
 
 import java.util.Arrays;
 import java.util.Deque;
